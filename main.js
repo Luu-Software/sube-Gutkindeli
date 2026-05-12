@@ -12,18 +12,16 @@ boton.addEventListener("click", () => {
   // COMPLETAR
 });
 
-let Registrada = "Registrada.value";
-let Distancia = "distancia.value";
+let Registrada = registrada.value;
+let Distancia = distancia.value;
+let tarifa = tarifa.innerText;
 
-if (Registrada === true){
+if (Registrada === "si"){
+  if (distancia <=3){
+    tarifa.innerText=715.24
+  }
   
+
+
 }
-  else if (Distancia <= 3){
-alert ("$ 715.24")
-}
-else if (Distancia >= 4) {
-  alert("$ 794.74")
-}
-else if (Distancia >=7){
-  alert("$ 855.97")
-}
+   
