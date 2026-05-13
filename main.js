@@ -10,18 +10,60 @@ Distancia	  | Con SUBE registrada   | Con SUBE sin registrar
 
 boton.addEventListener("click", () => {
   // COMPLETAR
-});
 
-let Registrada = registrada.value;
-let Distancia = distancia.value;
-let tarifa = tarifa.innerText;
+  let reg = registrada.value;
+let dist = distancia.value;
+let precio = tarifa.innerText;
 
-if (Registrada === "si"){
-  if (distancia <=3){
-    tarifa.innerText=715.24
+if (reg === "si"){
+  if (dist <=3){
+    tarifa.innerText="715.24"
   }
-  
-
+  else if (dist >= 4 && dist <= 6){
+      tarifa.innerText="794.74"
+  }
+  else if (dist >= 7 && dist <= 12){
+    tarifa.innerText="855.97"
+  }
+  else if (dist >=13 && dist <= 27){
+    tarifa.innerText="917.24"
+  }
 
 }
    
+if (reg === "no"){
+  if (dist <=3){
+    tarifa.innerText="1137.23"
+  }
+  else if (dist >= 4 && dist <= 6){
+      tarifa.innerText="1263.64"
+  }
+  else if (dist >= 7 && dist <= 12){
+    tarifa.innerText="1360.99"
+  }
+  else if (dist >=13 && dist <= 27){
+    tarifa.innerText="1458.41"
+  }
+
+
+}
+
+if (reg ==="social"){
+  if (dist <=3){
+    tarifa.innerText=" 339,18"
+  }
+  else if (dist >= 4 && dist <= 6){
+      tarifa.innerText="376,88"
+  }
+  else if (dist >= 7 && dist <= 12){
+    tarifa.innerText=" 405,91"
+  }
+  else if (dist >=13 && dist <= 27){
+    tarifa.innerText="434,97"
+  }
+  
+
+}
+
+});
+
